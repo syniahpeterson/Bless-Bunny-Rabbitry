@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="bg-beige/95 backdrop-blur-sm text-text fixed top-0 left-0 z-50 w-full shadow-sm border-b border-gray-warm"
+      className="w-full bg-beige/95 backdrop-blur-sm text-text fixed top-0 left-0 z-50 shadow-sm border-b border-gray-warm"
       aria-label="Primary navigation"
     >
       {/* Desktop Container */}
