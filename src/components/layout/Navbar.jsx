@@ -81,7 +81,6 @@ export default function Navbar() {
       {/* Mobile Menu Container */}
       <div
         id="mobile-navigation"
-        aria-hidden={!isOpen}
         className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[500px]" : "max-h-0"}`}
       >
         {/* Mobile Menu Links */}
