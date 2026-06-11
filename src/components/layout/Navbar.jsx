@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className="w-full bg-beige/95 backdrop-blur-sm text-text fixed top-0 left-0 z-50 shadow-sm border-b border-gray-warm"
+      className="w-full bg-beige/95 backdrop-blur-sm text-text fixed top-0 left-0 z-50 shadow-sm border-b border-gray-warm h-24"
       aria-label="Primary navigation"
     >
       {/* Desktop Container */}
@@ -81,7 +81,7 @@ export default function Navbar() {
       {/* Mobile Menu Container */}
       <div
         id="mobile-navigation"
-        className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[500px]" : "max-h-0"}`}
+        className={`xl:hidden fized top-24 left-0 w-full bg-beige shadow-lg transition-all duration-300 z-40 ${isOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-4 pointer-events-none"}`}
       >
         {/* Mobile Menu Links */}
         <div>
