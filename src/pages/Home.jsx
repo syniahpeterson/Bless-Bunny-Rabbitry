@@ -4,6 +4,7 @@ import WhyChooseUs from "../components/sections/WhyChooseUs";
 import OurBreeds from "../components/sections/OurBreeds";
 import AvailableBunnies from "../components/sections/AvailableBunnies";
 import OurStory from "../components/sections/OurStory";
+import Testimonials from "../components/sections/Testimonials";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <OurBreeds />
       <AvailableBunnies />
       <OurStory />
+      <Testimonials />
     </main>
   );
 }

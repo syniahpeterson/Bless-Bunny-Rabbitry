@@ -25,6 +25,11 @@ export default function SectionHeading({
       title: "text-white",
       description: "text-sage-light",
     },
+    dark: {
+      eyebrow: "text-forest",
+      title: "text-forest",
+      descriptions: "text-text"
+    }
   };
 
   return (

@@ -10,6 +10,7 @@ export default function Section({
     beige: "bg-beige",
     cream: "bg-cream",
     forest: "bg-forest",
+    sage: "bg-sage-light"
   };
   return (
     <section
