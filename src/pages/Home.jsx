@@ -6,6 +6,7 @@ import AvailableBunnies from "../components/sections/AvailableBunnies";
 import OurStory from "../components/sections/OurStory";
 import Testimonials from "../components/sections/Testimonials";
 import FAQ from "../components/sections/FAQ";
+import FinalCTA from "../components/ui/FinalCTA";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <OurStory />
       <Testimonials />
       <FAQ />
+      <FinalCTA />
     </main>
   );
 }
