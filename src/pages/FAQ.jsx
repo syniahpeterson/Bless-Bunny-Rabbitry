@@ -1,7 +1,15 @@
+// Component Imports:
+import PageHero from "../components/sections/PageHero";
+
 export default function FAQ() {
   return (
     <>
-      <h1>FAQ Page Content</h1>
+      <PageHero
+        variant="solid"
+        eyebrow="Frequently Asked Questions"
+        title="Everything You Need to Know"
+        description="Answers to the questions we hear most often from prospective bunny owners."
+      />
     </>
   );
 }

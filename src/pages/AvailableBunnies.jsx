@@ -1,7 +1,15 @@
+// Component Imports:
+import PageHero from "../components/sections/PageHero";
+
 export default function AvailableBunnies() {
   return (
     <>
-      <h1>Available Bunnies Page Content</h1>
+      <PageHero
+        variant="bunny"
+        eyebrow="Holland Lops & Netherland Dwarfs"
+        title="Available Bunnies"
+        description="Meet our current Holland Lop and Netherland Dwarf rabbits looking for loving homes."
+      />
     </>
   );
 }
