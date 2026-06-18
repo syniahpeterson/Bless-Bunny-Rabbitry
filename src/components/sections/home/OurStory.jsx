@@ -1,13 +1,13 @@
 // Component Imports:
-import Section from "../layout/Section";
-import SectionHeading from "../ui/SectionHeading";
-import HighlightCard from "../ui/HighlightCard";
+import Section from "../../layout/Section";
+import SectionHeading from "../../ui/SectionHeading";
+import HighlightCard from "../../ui/HighlightCard";
 
 // Data Imports:
-import storyHighlights from "../../data/storyHighlights";
+import storyHighlights from "../../../data/storyHighlights";
 
 // Image Imports:
-import familyRabbit from "../../assets/images/family-rabbit.webp"
+import familyRabbit from "../../../assets/images/family-rabbit.webp";
 
 // Icon Imports:
 import { PiRabbitLight } from "react-icons/pi";

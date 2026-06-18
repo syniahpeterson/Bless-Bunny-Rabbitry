@@ -1,5 +1,5 @@
 // Image Imports:
-import image from "../../assets/images/home-hero-bg.webp";
+import image from "../../../assets/images/home-hero-bg.webp";
 
 // Tool Imports:
 import { Link } from "react-router-dom";
@@ -8,10 +8,10 @@ import { Link } from "react-router-dom";
 import { LuRabbit } from "react-icons/lu";
 
 // Data Imports:
-import indicators from "../../data/trustIndicators";
+import indicators from "../../../data/trustIndicators";
 
 // Component Imports:
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 export default function Hero() {
   return (
@@ -80,8 +80,16 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Button variant="primary" to="/available-bunnies" rightIcon={LuRabbit}>View Available Bunnies</Button>
-              <Button variant="secondary" to="/about">Learn About Our Rabbitry</Button>
+              <Button
+                variant="primary"
+                to="/available-bunnies"
+                rightIcon={LuRabbit}
+              >
+                View Available Bunnies
+              </Button>
+              <Button variant="secondary" to="/about">
+                Learn About Our Rabbitry
+              </Button>
             </div>
 
             {/* Trust Indicators */}

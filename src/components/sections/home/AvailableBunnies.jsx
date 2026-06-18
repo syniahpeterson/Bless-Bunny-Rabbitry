@@ -1,14 +1,14 @@
 // Component Imports:
-import Section from "../layout/Section";
-import SectionHeading from "../ui/SectionHeading";
-import BunnyCard from "../ui/BunnyCard";
-import Button from "../ui/Button";
+import Section from "../../layout/Section";
+import SectionHeading from "../../ui/SectionHeading";
+import BunnyCard from "../../ui/BunnyCard";
+import Button from "../../ui/Button";
 
 // Tool Imports:
 import { Link } from "react-router-dom";
 
 // Data Imports:
-import bunnies from "../../data/featuredBunnies";
+import bunnies from "../../../data/featuredBunnies";
 
 // Icon Imports:
 import { PiRabbitLight } from "react-icons/pi";

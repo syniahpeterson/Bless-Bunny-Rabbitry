@@ -1,8 +1,8 @@
 // Component Imports:
-import Section from "../layout/Section";
-import SectionHeading from "../ui/SectionHeading";
-import FAQItem from "../ui/FAQItem";
-import Button from "../ui/Button";
+import Section from "../../layout/Section";
+import SectionHeading from "../../ui/SectionHeading";
+import FAQItem from "../../ui/FAQItem";
+import Button from "../../ui/Button";
 
 // Tool Imports:
 import { Link } from "react-router-dom";
@@ -12,11 +12,11 @@ import { CiHeart } from "react-icons/ci";
 import { BsArrowRight } from "react-icons/bs";
 
 // Data Imports:
-import faqData from "../../data/faqData";
+import faqData from "../../../data/faqData";
 
 // Image Imports:
-import faqRabbit1 from "../../assets/images/faq-rabbit-1.webp";
-import faqRabbit2 from "../../assets/images/faq-rabbit-2.webp";
+import faqRabbit1 from "../../../assets/images/faq-rabbit-1.webp";
+import faqRabbit2 from "../../../assets/images/faq-rabbit-2.webp";
 
 export default function FAQ() {
   const faqSchema = {

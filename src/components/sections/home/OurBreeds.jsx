@@ -1,13 +1,13 @@
 // Component Imports:
-import Section from "../layout/Section";
-import SectionHeading from "../ui/SectionHeading";
-import BreedCard from "../ui/BreedCard";
+import Section from "../../layout/Section";
+import SectionHeading from "../../ui/SectionHeading";
+import BreedCard from "../../ui/BreedCard";
 
 // Icon Imports:
 import { FaHeart } from "react-icons/fa";
 
 // Data Imports:
-import breeds from "../../data/breedFeatures";
+import breeds from "../../../data/breedFeatures";
 
 export default function OurBreeds() {
   return (
@@ -35,8 +35,9 @@ export default function OurBreeds() {
       <div className="mt-16 text-center">
         <p className="text-lg md:text-xl text-forest leading-relaxed">
           Both breeds are raised with love, daily socialization, and hands-on
-          care from birth. <strong className="ml-2">Healthy bunnies. Happy families.</strong>
-          <FaHeart className="inline ml-2 text-sage"/>
+          care from birth.{" "}
+          <strong className="ml-2">Healthy bunnies. Happy families.</strong>
+          <FaHeart className="inline ml-2 text-sage" />
         </p>
       </div>
     </Section>

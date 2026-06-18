@@ -1,10 +1,10 @@
 // Component Imports:
-import Section from "../layout/Section";
-import SectionHeading from "../ui/SectionHeading";
-import TestimonialCard from "../ui/TestimonialCard";
+import Section from "../../layout/Section";
+import SectionHeading from "../../ui/SectionHeading";
+import TestimonialCard from "../../ui/TestimonialCard";
 
 // Data Imports:
-import testimonials from "../../data/testimonials";
+import testimonials from "../../../data/testimonials";
 
 export default function Testimonials() {
   const { reviews, gallery } = testimonials;

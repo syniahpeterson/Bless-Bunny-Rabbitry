@@ -1,13 +1,13 @@
 // Component Imports:
-import SectionHeading from "../ui/SectionHeading";
-import FeatureCard from "../ui/FeatureCard";
-import Section from "../layout/Section";
+import SectionHeading from "../../ui/SectionHeading";
+import FeatureCard from "../../ui/FeatureCard";
+import Section from "../../layout/Section";
 
 // Data Imports:
-import features from "../../data/WhyChooseUs";
+import features from "../../../data/WhyChooseUs";
 
 // Image Imports:
-import bunnyImage from "../../assets/images/why-choose-us.webp";
+import bunnyImage from "../../../assets/images/why-choose-us.webp";
 
 export default function WhyChooseUs() {
   return (
