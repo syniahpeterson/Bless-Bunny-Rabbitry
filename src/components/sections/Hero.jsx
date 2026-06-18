@@ -10,6 +10,9 @@ import { LuRabbit } from "react-icons/lu";
 // Data Imports:
 import indicators from "../../data/trustIndicators";
 
+// Component Imports:
+import Button from "../ui/Button";
+
 export default function Hero() {
   return (
     <section
@@ -77,20 +80,8 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-              <Link
-                to="/available-bunnies"
-                className="flex h-14 w-full items-center justify-center gap-2 rounded-xl bg-forest px-8 font-medium text-white shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl sm:w-auto"
-              >
-                View Available Bunnies
-                <LuRabbit aria-hidden="true" />
-              </Link>
-
-              <Link
-                to="/about"
-                className="flex h-14 w-full items-center justify-center rounded-xl border border-forest px-8 font-medium text-forest transition-all hover:bg-white/70 sm:w-auto"
-              >
-                Learn About Our Rabbitry
-              </Link>
+              <Button variant="primary" to="/available-bunnies" rightIcon={LuRabbit}>View Available Bunnies</Button>
+              <Button variant="secondary" to="/about">Learn About Our Rabbitry</Button>
             </div>
 
             {/* Trust Indicators */}

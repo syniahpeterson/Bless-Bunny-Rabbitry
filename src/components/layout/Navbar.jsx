@@ -11,6 +11,10 @@ import { Link, NavLink } from "react-router-dom";
 // Icon Imports:
 import { IoMenu, IoClose } from "react-icons/io5";
 
+// Component Imports:
+import Button from "../ui/Button";
+import { LuRabbit } from "react-icons/lu";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -55,12 +59,16 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           {/* Navbar CTA */}
-          <Link
-            to="/available-bunnies"
-            className="hidden xl:flex items-center justify-center px-5 py-2.5 rounded-full bg-forest text-white font-medium whitespace-nowrap transition-all duration-300 hover:scale-105 hover:bg-text shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2"
-          >
-            Available Bunnies
-          </Link>
+          <div className="hidden xl:block">
+            <Button
+              variant="navbar"
+              rightIcon={LuRabbit}
+              to="/available-bunnies"
+              className="hover:scale-105"
+            >
+              Available Bunnies
+            </Button>
+          </div>
 
           {/* Menu Toggle Button */}
           <button
@@ -81,7 +89,7 @@ export default function Navbar() {
       {/* Mobile Menu Container */}
       <div
         id="mobile-navigation"
-        className={`xl:hidden fized top-24 left-0 w-full bg-beige shadow-lg transition-all duration-300 z-40 ${isOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-4 pointer-events-none"}`}
+        className={`xl:hidden fixed top-24 left-0 w-full bg-beige shadow-lg transition-all duration-300 z-40 ${isOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-4 pointer-events-none"}`}
       >
         {/* Mobile Menu Links */}
         <div>
@@ -103,13 +111,14 @@ export default function Navbar() {
 
           {/* Mobile CTA */}
           <div className="p-4">
-            <Link
+            <Button
+              variant="navbar"
+              rightIcon={LuRabbit}
               to="/available-bunnies"
-              onClick={() => setIsOpen(false)}
-              className="flex w-full justify-center rounded-full bg-forest text-white py-3 font-medium shadow-md transition-all hover:bg-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest focus-visible:ring-offset-2"
+              fullWidth
             >
               Available Bunnies
-            </Link>
+            </Button>
           </div>
         </div>
       </div>

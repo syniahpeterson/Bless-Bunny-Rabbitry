@@ -2,6 +2,7 @@
 import Section from "../layout/Section";
 import SectionHeading from "../ui/SectionHeading";
 import BunnyCard from "../ui/BunnyCard";
+import Button from "../ui/Button";
 
 // Tool Imports:
 import { Link } from "react-router-dom";
@@ -42,17 +43,15 @@ export default function AvailableBunnies() {
 
       {/* Main CTA */}
       <div className="mt-12 flex justify-center">
-        <Link
+        <Button
+          variant="primary"
           to="/available-bunnies"
-          aria-label="View all available rabbits"
-          className="inline-flex items-center gap-3 rounded-2xl bg-forest px-10 py-5 uppercase tracking-[0.2em] text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-forest-light"
+          leftIcon={PiRabbitLight}
+          rightIcon={HiArrowRight}
+          className="px-10 py-5 uppercase tracking-[0.2em] shadow-lg"
         >
-          <PiRabbitLight className="text-2xl" aria-hidden="true" />
-
-          <span>View All Available Bunnies</span>
-
-          <HiArrowRight aria-hidden="true" />
-        </Link>
+          View All Available Bunnies
+        </Button>
       </div>
     </Section>
   );

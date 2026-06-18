@@ -2,6 +2,7 @@
 import Section from "../layout/Section";
 import SectionHeading from "../ui/SectionHeading";
 import FAQItem from "../ui/FAQItem";
+import Button from "../ui/Button";
 
 // Tool Imports:
 import { Link } from "react-router-dom";
@@ -14,7 +15,8 @@ import { BsArrowRight } from "react-icons/bs";
 import faqData from "../../data/faqData";
 
 // Image Imports:
-import faqRabbit from "../../assets/images/faq-rabbit.webp";
+import faqRabbit1 from "../../assets/images/faq-rabbit-1.webp";
+import faqRabbit2 from "../../assets/images/faq-rabbit-2.webp";
 
 export default function FAQ() {
   const faqSchema = {
@@ -67,7 +69,13 @@ export default function FAQ() {
           {/* Image */}
           <div>
             <img
-              src={faqRabbit}
+              src={faqRabbit1}
+              alt="Holland Lop rabbit sitting indoors"
+              loading="lazy"
+              className="w-full rounded-[2rem] object-cover shadow-md mb-4"
+            />
+            <img
+              src={faqRabbit2}
               alt="Holland Lop rabbit sitting indoors"
               loading="lazy"
               className="w-full rounded-[2rem] object-cover shadow-md"
@@ -95,14 +103,14 @@ export default function FAQ() {
             </div>
           </div>
 
-          <Link
+          <Button
+            variant="cta"
             to="/contact"
-            aria-label="Contact Bless Bunny Rabbitry"
-            className="inline-flex items-center justify-center gap-3 rounded-xl bg-clay px-8 py-4 font-medium uppercase tracking-[0.15em] text-white transition-all duration-300 hover:-translate-y-1 hover:opacity-90"
+            rightIcon={BsArrowRight}
+            className="px-8 py-4 uppercase tracking-[0.15em] rounded-xl"
           >
             Contact Us
-            <BsArrowRight aria-hidden="true" />
-          </Link>
+          </Button>
         </aside>
       </Section>
     </>
