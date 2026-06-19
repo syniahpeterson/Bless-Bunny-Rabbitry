@@ -1,4 +1,5 @@
 // Component Imports:
+import OurBreeds from "../components/sections/about/OurBreeds";
 import OurStory from "../components/sections/about/OurStory";
 import OurValues from "../components/sections/about/OurValues";
 import PageHero from "../components/sections/PageHero";
@@ -14,6 +15,7 @@ export default function About() {
       />
       <OurStory />
       <OurValues />
+      <OurBreeds />
     </main>
   );
 }
