@@ -1,5 +1,6 @@
 // Component Imports:
 import OurStory from "../components/sections/about/OurStory";
+import OurValues from "../components/sections/about/OurValues";
 import PageHero from "../components/sections/PageHero";
 
 export default function About() {
@@ -12,6 +13,7 @@ export default function About() {
         description="Learn more about our family, our rabbits, and our commitment to raising healthy, well-socialized companions."
       />
       <OurStory />
+      <OurValues />
     </main>
   );
 }
