@@ -1,4 +1,5 @@
 // Component Imports:
+import Gallery from "../components/sections/about/Gallery";
 import OurBreeds from "../components/sections/about/OurBreeds";
 import OurStory from "../components/sections/about/OurStory";
 import OurValues from "../components/sections/about/OurValues";
@@ -16,6 +17,7 @@ export default function About() {
       <OurStory />
       <OurValues />
       <OurBreeds />
+      <Gallery />
     </main>
   );
 }

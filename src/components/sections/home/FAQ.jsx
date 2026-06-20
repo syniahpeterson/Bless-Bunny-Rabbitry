@@ -3,13 +3,10 @@ import Section from "../../layout/Section";
 import SectionHeading from "../../ui/SectionHeading";
 import FAQItem from "../../ui/FAQItem";
 import Button from "../../ui/Button";
+import SectionBanner from "../../ui/SectionBanner";
 
 // Tool Imports:
 import { Link } from "react-router-dom";
-
-// Icon Imports:
-import { CiHeart } from "react-icons/ci";
-import { BsArrowRight } from "react-icons/bs";
 
 // Data Imports:
 import faqData from "../../../data/faqData";
@@ -84,34 +81,12 @@ export default function FAQ() {
         </div>
 
         {/* Contact CTA */}
-        <aside
-          className="mx-auto mt-12 flex flex-col gap-6 rounded-[2rem] border border-border bg-white p-6 md:flex-row md:items-center md:justify-between"
-          aria-label="Contact section"
-        >
-          <div className="flex items-center gap-5">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-clay text-white">
-              <CiHeart className="text-3xl" aria-hidden="true" />
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-semibold text-text">
-                Still have questions?
-              </h3>
-              <p className="text-text">
-                We're happy to help! Reach out anytime.
-              </p>
-            </div>
-          </div>
-
-          <Button
-            variant="cta"
-            to="/contact"
-            rightIcon={BsArrowRight}
-            className="px-8 py-4 uppercase tracking-[0.15em] rounded-xl"
-          >
-            Contact Us
-          </Button>
-        </aside>
+        <SectionBanner
+          title="Still have questions?"
+          paragraph="We're happy to help! Reach out anytime."
+          to="/contact"
+          message="Contact Us"
+        />
       </Section>
     </>
   );
