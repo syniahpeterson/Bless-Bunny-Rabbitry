@@ -30,6 +30,7 @@ export default function AdoptionProcess() {
             {steps.map((step, index) => (
               <ProcessCard
                 key={step.id}
+                number={step.number}
                 title={step.title}
                 description={step.description}
                 icon={step.icon}

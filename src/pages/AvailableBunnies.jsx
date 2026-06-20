@@ -1,5 +1,6 @@
 // Component Imports:
 import AdoptionProcess from "../components/sections/available-bunnies/AdoptionProcess";
+import BunnyGrid from "../components/sections/available-bunnies/BunnyGrid";
 import PageHero from "../components/sections/PageHero";
 
 export default function AvailableBunnies() {
@@ -12,6 +13,7 @@ export default function AvailableBunnies() {
         description="Meet our current Holland Lop and Netherland Dwarf rabbits looking for loving homes."
       />
       <AdoptionProcess />
+      <BunnyGrid />
     </>
   );
 }

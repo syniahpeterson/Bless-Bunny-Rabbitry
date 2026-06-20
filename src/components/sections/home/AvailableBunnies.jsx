@@ -37,6 +37,8 @@ export default function AvailableBunnies() {
             breed={bunny.breed}
             gender={bunny.gender}
             availableDate={bunny.availableDate}
+            color={bunny.color}
+            status={bunny.status}
           />
         ))}
       </div>
