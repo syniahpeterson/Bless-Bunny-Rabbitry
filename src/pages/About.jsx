@@ -3,6 +3,7 @@ import Gallery from "../components/sections/about/Gallery";
 import OurBreeds from "../components/sections/about/OurBreeds";
 import OurStory from "../components/sections/about/OurStory";
 import OurValues from "../components/sections/about/OurValues";
+import WhyChooseUs from "../components/sections/about/WhyChooseUs";
 import PageHero from "../components/sections/PageHero";
 
 export default function About() {
@@ -18,6 +19,7 @@ export default function About() {
       <OurValues />
       <OurBreeds />
       <Gallery />
+      <WhyChooseUs />
     </main>
   );
 }
