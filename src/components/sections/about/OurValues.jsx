@@ -4,7 +4,7 @@ import SectionHeading from "../../ui/SectionHeading";
 import ValueCard from "../../ui/ValueCard";
 
 // Data Imports:
-import values from "../../../data/aboutValues";
+import values from "../../../data/about/aboutValues";
 
 // Icon Imports:
 import { FaLeaf } from "react-icons/fa";

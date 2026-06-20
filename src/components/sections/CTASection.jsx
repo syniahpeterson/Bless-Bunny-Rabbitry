@@ -1,10 +1,15 @@
-// Component Imports:
+// Component Imports
 import Section from "../layout/Section";
 import SectionHeading from "../ui/SectionHeading";
 import Button from "../ui/Button";
 
-// Icon Imports:
+// Data Imports
+import features from "../../data/features";
+
+// Icon Imports
 import { LuLeaf } from "react-icons/lu";
+import { GiRabbit } from "react-icons/gi";
+import { BsArrowRight } from "react-icons/bs";
 
 export default function CTASection({
   id,
@@ -13,8 +18,6 @@ export default function CTASection({
   descriptions,
   image,
   imageAlt,
-  buttons = [],
-  features = [],
 }) {
   return (
     <Section
@@ -55,59 +58,57 @@ export default function CTASection({
           </div>
 
           {/* CTA Buttons */}
-          {buttons.length > 0 && (
-            <nav
-              aria-label="Call to action links"
-              className="mt-10 flex flex-col gap-4 sm:flex-row"
+          <nav
+            aria-label="Rabbitry actions"
+            className="mt-10 flex flex-col gap-4 sm:flex-row"
+          >
+            <Button
+              variant="primary"
+              to="/available-bunnies"
+              leftIcon={GiRabbit}
+              rightIcon={BsArrowRight}
+              className="px-10 py-5 uppercase tracking-[0.12em] shadow-lg"
             >
-              {buttons.map((button) => (
-                <Button
-                  key={button.text}
-                  variant={button.variant}
-                  to={button.to}
-                  href={button.href}
-                  leftIcon={button.leftIcon}
-                  rightIcon={button.rightIcon}
-                  className={button.className}
-                >
-                  {button.text}
-                </Button>
-              ))}
-            </nav>
-          )}
+              View Available Bunnies
+            </Button>
+
+            <Button
+              variant="secondary"
+              to="/contact"
+              rightIcon={BsArrowRight}
+              className="px-10 py-5 uppercase tracking-[0.12em]"
+            >
+              Contact Us
+            </Button>
+          </nav>
 
           {/* Feature Highlights */}
-          {features.length > 0 && (
-            <div className="mt-20 grid gap-8 md:grid-cols-3">
-              {features.map((feature, index) => {
-                const Icon = feature.icon;
+          <div className="mt-20 grid gap-8 md:grid-cols-3">
+            {features.map((feature, index) => {
+              const Icon = feature.icon;
 
-                return (
-                  <article
-                    key={feature.id}
-                    className={`flex flex-col items-center px-4 text-center ${
-                      index !== features.length - 1
-                        ? "md:border-r md:border-border"
-                        : ""
-                    }`}
-                  >
-                    <div className="mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-sage-light/50">
-                      <Icon
-                        className="text-4xl text-forest"
-                        aria-hidden="true"
-                      />
-                    </div>
+              return (
+                <article
+                  key={feature.id}
+                  className={`flex flex-col items-center px-4 text-center ${
+                    index !== features.length - 1
+                      ? "md:border-r md:border-border"
+                      : ""
+                  }`}
+                >
+                  <div className="mb-5 flex h-20 w-20 items-center justify-center rounded-full bg-sage-light/50">
+                    <Icon className="text-4xl text-forest" aria-hidden="true" />
+                  </div>
 
-                    <h3 className="text-lg font-semibold uppercase tracking-wider text-forest">
-                      {feature.text}
-                    </h3>
+                  <h3 className="text-lg font-semibold uppercase tracking-wider text-forest">
+                    {feature.text}
+                  </h3>
 
-                    <p className="mt-2 text-text">{feature.subtext}</p>
-                  </article>
-                );
-              })}
-            </div>
-          )}
+                  <p className="mt-2 text-text">{feature.subtext}</p>
+                </article>
+              );
+            })}
+          </div>
         </div>
       </div>
 

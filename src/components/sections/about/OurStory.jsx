@@ -4,10 +4,10 @@ import SectionHeading from "../../ui/SectionHeading";
 import StatCard from "../../ui/StatCard";
 
 // Image Imports:
-import storyImage from "../../../assets/images/about-story.webp";
+import storyImage from "../../../assets/images/about/about-story.webp";
 
 // Data Imports:
-import stats from "../../../data/aboutStats";
+import stats from "../../../data/about/aboutStats";
 
 // Icon Imports:
 import { LuLeaf } from "react-icons/lu";

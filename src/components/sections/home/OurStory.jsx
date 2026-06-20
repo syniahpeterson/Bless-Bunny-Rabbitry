@@ -4,10 +4,10 @@ import SectionHeading from "../../ui/SectionHeading";
 import HighlightCard from "../../ui/HighlightCard";
 
 // Data Imports:
-import storyHighlights from "../../../data/storyHighlights";
+import storyHighlights from "../../../data/home/storyHighlights";
 
 // Image Imports:
-import familyRabbit from "../../../assets/images/family-rabbit.webp";
+import familyRabbit from "../../../assets/images/home/family-rabbit.webp";
 
 // Icon Imports:
 import { PiRabbitLight } from "react-icons/pi";

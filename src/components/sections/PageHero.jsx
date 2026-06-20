@@ -1,8 +1,8 @@
 // Image Imports:
-import meadowImage from "../../assets/images/page-hero-meadow.webp";
-import bunnyImage from "../../assets/images/page-hero-bunny.webp";
-import bunniesImage from "../../assets/images/page-hero-bunnies.webp"
-import groupImage from "../../assets/images/page-hero-group.webp"
+import meadowImage from "../../assets/images/hero/page-hero-meadow.webp";
+import bunnyImage from "../../assets/images/hero/page-hero-bunny.webp";
+import bunniesImage from "../../assets/images/hero/page-hero-bunnies.webp"
+import groupImage from "../../assets/images/hero/page-hero-group.webp"
 
 export default function PageHero({
   title,

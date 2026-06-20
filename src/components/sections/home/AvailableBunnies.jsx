@@ -8,7 +8,7 @@ import Button from "../../ui/Button";
 import { Link } from "react-router-dom";
 
 // Data Imports:
-import bunnies from "../../../data/featuredBunnies";
+import bunnies from "../../../data/home/featuredBunnies";
 
 // Icon Imports:
 import { PiRabbitLight } from "react-icons/pi";

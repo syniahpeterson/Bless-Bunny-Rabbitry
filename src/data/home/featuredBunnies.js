@@ -1,7 +1,7 @@
 // Image Imports:
-import snowball from "../assets/images/Snowball.webp"
-import luna from "../assets/images/Luna.webp"
-import caramel from "../assets/images/Caramel.webp"
+import snowball from "../../assets/images/bunnies/Snowball.webp"
+import luna from "../../assets/images/bunnies/Luna.webp"
+import caramel from "../../assets/images/bunnies/Caramel.webp"
 
 const bunnies = [
     {

@@ -1,5 +1,5 @@
 // Image Imports:
-import image from "../../../assets/images/home-hero-bg.webp";
+import image from "../../../assets/images/hero/home-hero-bg.webp";
 
 // Tool Imports:
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import { LuRabbit } from "react-icons/lu";
 
 // Data Imports:
-import indicators from "../../../data/trustIndicators";
+import indicators from "../../../data/home/trustIndicators";
 
 // Component Imports:
 import Button from "../../ui/Button";

@@ -1,6 +1,6 @@
 // Image Imports
-import hollandLopImage from "../assets/images/about-holland-lop.webp";
-import netherlandDwarfImage from "../assets/images/about-netherland-dwarf.webp";
+import hollandLopImage from "../../assets/images/about/about-holland-lop.webp";
+import netherlandDwarfImage from "../../assets/images/about/about-netherland-dwarf.webp";
 
 // Icon Imports
 import { CiHeart } from "react-icons/ci";

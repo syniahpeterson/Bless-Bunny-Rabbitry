@@ -5,10 +5,10 @@ import { FaAward } from "react-icons/fa";
 import { GoShieldCheck } from "react-icons/go";
 
 // Image Imports:
-import image1 from "../assets/images/family-raised.webp";
-import image2 from "../assets/images/daily-socialization.webp";
-import image3 from "../assets/images/pedigreed-bloodlines.webp";
-import image4 from "../assets/images/health-care.webp";
+import image1 from "../../assets/images/about/family-raised.webp";
+import image2 from "../../assets/images/about/daily-socialization.webp";
+import image3 from "../../assets/images/about/pedigreed-bloodlines.webp";
+import image4 from "../../assets/images/about/health-care.webp";
 
 const aboutValues = [
   {

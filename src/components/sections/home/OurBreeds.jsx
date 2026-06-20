@@ -7,7 +7,7 @@ import BreedCard from "../../ui/BreedCard";
 import { FaHeart } from "react-icons/fa";
 
 // Data Imports:
-import breeds from "../../../data/breedFeatures";
+import breeds from "../../../data/home/breedFeatures";
 
 export default function OurBreeds() {
   return (

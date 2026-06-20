@@ -1,8 +1,8 @@
 // Image Imports:
-import familyImage from "../assets/images/family.webp";
-import bunnyImage from "../assets/images/bunny.webp";
-import childImage from "../assets/images/child-bunny.webp";
-import womanImage from "../assets/images/woman-bunny.webp";
+import familyImage from "../../assets/images/home/family.webp";
+import bunnyImage from "../../assets/images/home/bunny.webp";
+import childImage from "../../assets/images/home/child-bunny.webp";
+import womanImage from "../../assets/images/home/woman-bunny.webp";
 
 const testimonials = {
   reviews: [

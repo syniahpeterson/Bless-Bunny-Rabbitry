@@ -4,8 +4,8 @@ import { BsHouseHeart } from "react-icons/bs";
 import { GiRabbit, GiWeightScale, GiBrain } from "react-icons/gi";
 
 // Image Imports:
-import hollandLop from "../assets/images/holland-lop.webp";
-import netherlandDwarf from "../assets/images/netherland-dwarf.webp";
+import hollandLop from "../../assets/images/home/holland-lop.webp";
+import netherlandDwarf from "../../assets/images/home/netherland-dwarf.webp";
 
 const breeds = [
   {

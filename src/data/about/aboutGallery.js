@@ -1,9 +1,9 @@
 // Image Imports:
-import gallery1 from "../assets/images/about-gallery-1.webp";
-import gallery2 from "../assets/images/about-gallery-2.webp";
-import gallery3 from "../assets/images/about-gallery-3.webp";
-import gallery4 from "../assets/images/about-gallery-4.webp";
-import gallery5 from "../assets/images/about-gallery-5.webp";
+import gallery1 from "../../assets/images/about/about-gallery-1.webp";
+import gallery2 from "../../assets/images/about/about-gallery-2.webp";
+import gallery3 from "../../assets/images/about/about-gallery-3.webp";
+import gallery4 from "../../assets/images/about/about-gallery-4.webp";
+import gallery5 from "../../assets/images/about/about-gallery-5.webp";
 
 const aboutGallery = [
   {

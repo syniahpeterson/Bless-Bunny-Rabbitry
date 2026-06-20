@@ -4,10 +4,10 @@ import FeatureCard from "../../ui/FeatureCard";
 import Section from "../../layout/Section";
 
 // Data Imports:
-import features from "../../../data/WhyChooseUs";
+import features from "../../../data/home/WhyChooseUs";
 
 // Image Imports:
-import bunnyImage from "../../../assets/images/why-choose-us.webp";
+import bunnyImage from "../../../assets/images/home/why-choose-us.webp";
 
 export default function WhyChooseUs() {
   return (

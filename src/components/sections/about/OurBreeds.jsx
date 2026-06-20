@@ -3,7 +3,7 @@ import SectionHeading from "../../ui/SectionHeading";
 import BreedShowcase from "../../ui/BreedShowcase";
 
 // Data Imports:
-import aboutBreeds from "../../../data/aboutBreeds";
+import aboutBreeds from "../../../data/about/aboutBreeds";
 
 // Icon Imports:
 import { FaLeaf } from "react-icons/fa";

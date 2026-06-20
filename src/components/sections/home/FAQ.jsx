@@ -9,11 +9,11 @@ import SectionBanner from "../../ui/SectionBanner";
 import { Link } from "react-router-dom";
 
 // Data Imports:
-import faqData from "../../../data/faqData";
+import faqData from "../../../data/home/faqData";
 
 // Image Imports:
-import faqRabbit1 from "../../../assets/images/faq-rabbit-1.webp";
-import faqRabbit2 from "../../../assets/images/faq-rabbit-2.webp";
+import faqRabbit1 from "../../../assets/images/home/faq-rabbit-1.webp";
+import faqRabbit2 from "../../../assets/images/home/faq-rabbit-2.webp";
 
 export default function FAQ() {
   const faqSchema = {

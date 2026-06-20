@@ -4,10 +4,10 @@ import SectionHeading from "../../ui/SectionHeading";
 import ListCard from "../../ui/ListCard";
 
 // Image Imports:
-import aboutFamily from "../../../assets/images/about-family.webp";
+import aboutFamily from "../../../assets/images/about/about-family.webp";
 
 // Data Imports:
-import bullets from "../../../data/aboutBullets";
+import bullets from "../../../data/about/aboutBullets";
 
 // Icon Imports:
 import { FaLeaf } from "react-icons/fa";

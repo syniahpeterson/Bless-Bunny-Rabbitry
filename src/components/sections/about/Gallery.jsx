@@ -5,7 +5,7 @@ import SectionHeading from "../../ui/SectionHeading";
 import GalleryGrid from "../../ui/GalleryGrid";
 
 // Data Imports:
-import photos from "../../../data/aboutGallery";
+import photos from "../../../data/about/aboutGallery";
 
 export default function Gallery() {
   return (
