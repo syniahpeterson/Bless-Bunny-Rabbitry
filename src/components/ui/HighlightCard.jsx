@@ -1,6 +1,12 @@
 export default function HighlightCard({ title, description, icon: Icon }) {
+  const hasDescription = Boolean(description);
+
   return (
-    <article className="flex gap-5 border-t border-border pt-6">
+    <article
+      className={`flex gap-5 border-t border-border pt-6 ${
+        !hasDescription ? "items-center" : ""
+      }`}
+    >
       <div
         className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-sage-light text-forest"
         aria-hidden="true"
@@ -8,12 +14,20 @@ export default function HighlightCard({ title, description, icon: Icon }) {
         <Icon className="text-5xl" />
       </div>
 
-      <div>
-        <h3 className="mb-2 font-serif text-2xl font-semibold text-forest">
-          {title}
-        </h3>
+      <div className={hasDescription ? "" : "flex min-h-24 items-center"}>
+        <div>
+          <h3
+            className={`font-serif text-2xl font-semibold text-forest ${
+              hasDescription ? "mb-2" : ""
+            }`}
+          >
+            {title}
+          </h3>
 
-        <p className="text-lg leading-relaxed text-text">{description}</p>
+          {hasDescription && (
+            <p className="text-lg leading-relaxed text-text">{description}</p>
+          )}
+        </div>
       </div>
     </article>
   );
