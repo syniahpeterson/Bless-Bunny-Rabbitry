@@ -1,5 +1,6 @@
 // Component Imports:
 import AdoptionProcess from "../components/sections/available-bunnies/AdoptionProcess";
+import BunnyChosen from "../components/sections/available-bunnies/BunnyChosen";
 import BunnyGrid from "../components/sections/available-bunnies/BunnyGrid";
 import WhyChooseUs from "../components/sections/available-bunnies/WhyChooseUs";
 import PageHero from "../components/sections/PageHero";
@@ -16,6 +17,7 @@ export default function AvailableBunnies() {
       <AdoptionProcess />
       <BunnyGrid />
       <WhyChooseUs />
+      <BunnyChosen />
     </>
   );
 }
