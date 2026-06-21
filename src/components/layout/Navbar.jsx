@@ -112,13 +112,14 @@ export default function Navbar() {
           {/* Mobile CTA */}
           <div className="p-4">
             <Button
-              variant="navbar"
-              rightIcon={LuRabbit}
-              to="/available-bunnies"
-              fullWidth
-            >
-              Available Bunnies
-            </Button>
+  variant="navbar"
+  rightIcon={LuRabbit}
+  to="/available-bunnies"
+  fullWidth
+  onClick={() => setIsOpen(false)}
+>
+  Available Bunnies
+</Button>
           </div>
         </div>
       </div>

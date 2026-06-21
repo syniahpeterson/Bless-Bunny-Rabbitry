@@ -5,6 +5,7 @@ export default function Button({
   variant = "primary",
   to,
   href,
+  onClick,
   leftIcon: LeftIcon,
   rightIcon: RightIcon,
   className = "",
@@ -50,6 +51,7 @@ export default function Button({
     return (
       <a
         href={href}
+        onClick={onClick}
         target={newTab ? "_blank" : undefined}
         rel={newTab ? "noopener noreferrer" : undefined}
         className={styles}
@@ -61,14 +63,19 @@ export default function Button({
 
   if (to) {
     return (
-      <Link to={to} className={styles}>
+      <Link to={to} onClick={onClick} className={styles}>
         {content}
       </Link>
     );
   }
 
   return (
-    <button type={type} disabled={disabled} className={styles}>
+    <button
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className={styles}
+    >
       {content}
     </button>
   );

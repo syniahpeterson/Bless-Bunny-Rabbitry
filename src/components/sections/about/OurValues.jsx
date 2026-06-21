@@ -41,6 +41,7 @@ export default function OurValues() {
               title={value.title}
               description={value.description}
               image={value.image}
+              variant="values"
             />
           ))}
         </div>
