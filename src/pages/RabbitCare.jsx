@@ -2,6 +2,7 @@
 import PageHero from "../components/sections/PageHero";
 import HousingEssentials from "../components/sections/rabbit-care/HousingEssentials";
 import Introduction from "../components/sections/rabbit-care/Introduction";
+import Nutrition from "../components/sections/rabbit-care/Nutrition";
 
 export default function RabbitCare() {
   return (
@@ -14,6 +15,7 @@ export default function RabbitCare() {
       />
       <Introduction />
       <HousingEssentials />
+      <Nutrition />
     </main>
   );
 }

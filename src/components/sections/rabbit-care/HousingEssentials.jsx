@@ -10,6 +10,7 @@ export default function HousingEssentials() {
   return (
     <Section variant="beige" aria-labelledby="housing-essentials-heading">
       <SectionHeading
+        id="housing-essentials-heading"
         eyebrow="Housing Essentials"
         title="Creating a Safe and Comfortable Home"
         descriptions={[
