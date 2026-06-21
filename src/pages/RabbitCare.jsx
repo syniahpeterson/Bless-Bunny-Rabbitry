@@ -1,5 +1,6 @@
 // Component imports:
 import PageHero from "../components/sections/PageHero";
+import DailyCare from "../components/sections/rabbit-care/DailyCare";
 import HousingEssentials from "../components/sections/rabbit-care/HousingEssentials";
 import Introduction from "../components/sections/rabbit-care/Introduction";
 import Nutrition from "../components/sections/rabbit-care/Nutrition";
@@ -16,6 +17,7 @@ export default function RabbitCare() {
       <Introduction />
       <HousingEssentials />
       <Nutrition />
+      <DailyCare />
     </main>
   );
 }
