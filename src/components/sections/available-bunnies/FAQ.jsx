@@ -9,11 +9,11 @@ import SectionBanner from "../../ui/SectionBanner";
 import { Link } from "react-router-dom";
 
 // Data Imports:
-import faqData from "../../../data/home/faqData";
+import faqData from "../../../data/available-bunnies/faqData";
 
 // Image Imports:
-import faqRabbit1 from "../../../assets/images/home/faq-rabbit-1.webp";
-import faqRabbit2 from "../../../assets/images/home/faq-rabbit-2.webp";
+import faqRabbit1 from "../../../assets/images/available-bunnies/faq-rabbit-1.webp";
+import faqRabbit2 from "../../../assets/images/available-bunnies/faq-rabbit-2.webp";
 
 export default function FAQ() {
   const faqSchema = {
@@ -39,13 +39,13 @@ export default function FAQ() {
         }}
       />
 
-      <Section variant="beige" aria-labelledby="faq-heading">
+      <Section variant="white" aria-labelledby="faq-heading">
         <SectionHeading
           id="faq-heading"
-          eyebrow="Frequently Asked Questions"
-          title="Everything You Need to Know"
+          eyebrow="Questions & Answers"
+          title="Frequently Asked Questions"
           descriptions={[
-            "Have questions about our rabbits, adoption process, or care philosophy? We've answered some of the questions we hear most often.",
+            "Find answers to some of the most common questions about our rabbits, adoption process, and what to expect when bringing a bunny home.",
           ]}
         />
 
@@ -67,13 +67,13 @@ export default function FAQ() {
           <div>
             <img
               src={faqRabbit1}
-              alt="Holland Lop rabbit sitting indoors"
+              alt="Netherland Dwarf rabbit sitting outdoors"
               loading="lazy"
               className="w-full rounded-[2rem] object-cover shadow-md mb-4"
             />
             <img
               src={faqRabbit2}
-              alt="Netherland Dwarf rabbit sitting indoors"
+              alt="Holland Lop rabbit sitting indoors"
               loading="lazy"
               className="w-full rounded-[2rem] object-cover shadow-md"
             />
