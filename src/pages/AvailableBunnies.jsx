@@ -12,7 +12,7 @@ import familyWithRabbitImage from "../assets/images/cta/available-bunnies-cta.we
 
 export default function AvailableBunnies() {
   return (
-    <>
+    <main className="mt-24">
       <PageHero
         variant="bunny"
         eyebrow="Holland Lops & Netherland Dwarfs"
@@ -34,6 +34,6 @@ export default function AvailableBunnies() {
         image={familyWithRabbitImage}
         imageAlt="Family holding their newly adopted rabbit"
       />
-    </>
+    </main>
   );
 }

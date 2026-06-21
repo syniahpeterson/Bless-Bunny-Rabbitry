@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
           "Every rabbit receives daily attention, proper care, and early socialization to help ensure a healthy and friendly companion for your family.",
         ]}
       />
-      <div>
+      <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
         {whyData.map((why) => (
           <ValueCard
             key={why.id}
