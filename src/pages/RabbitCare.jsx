@@ -6,6 +6,10 @@ import HousingEssentials from "../components/sections/rabbit-care/HousingEssenti
 import Introduction from "../components/sections/rabbit-care/Introduction";
 import Nutrition from "../components/sections/rabbit-care/Nutrition";
 import FAQ from "../components/sections/rabbit-care/FAQ";
+import CTASection from "../components/sections/CTASection";
+
+// Image Imports:
+import rabbitCareCTAImage from "../assets/images/cta/rabbit-care-cta.webp";
 
 export default function RabbitCare() {
   return (
@@ -22,6 +26,16 @@ export default function RabbitCare() {
       <DailyCare />
       <Health />
       <FAQ />
+      <CTASection
+        id="rabbit-care-cta-heading"
+        eyebrow="Ready to Welcome a Rabbit Home?"
+        title="Find a Healthy, Well-Socialized Companion"
+        descriptions={[
+          "Now that you've learned the essentials of rabbit care, explore our available Holland Lop and Netherland Dwarf rabbits and find the perfect companion for your family.",
+        ]}
+        image={rabbitCareCTAImage}
+        imageAlt="Healthy Holland Lop and Netherland Dwarf rabbits resting together in a cozy indoor setting"
+      />
     </main>
   );
 }
