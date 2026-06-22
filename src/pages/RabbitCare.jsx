@@ -5,6 +5,7 @@ import Health from "../components/sections/rabbit-care/Health";
 import HousingEssentials from "../components/sections/rabbit-care/HousingEssentials";
 import Introduction from "../components/sections/rabbit-care/Introduction";
 import Nutrition from "../components/sections/rabbit-care/Nutrition";
+import FAQ from "../components/sections/rabbit-care/FAQ";
 
 export default function RabbitCare() {
   return (
@@ -20,6 +21,7 @@ export default function RabbitCare() {
       <Nutrition />
       <DailyCare />
       <Health />
+      <FAQ />
     </main>
   );
 }
