@@ -1,15 +1,17 @@
 // Component Imports:
 import PageHero from "../components/sections/PageHero";
+import FeaturedTestimonials from "../components/sections/testimonials/FeaturedTestimonials";
 
 export default function Testimonials() {
   return (
-    <>
+    <main className="mt-24">
       <PageHero
         variant="group"
-        eyebrow="Happy Families"
-        title="Kind Words From Bunny Owners"
-        description="Read experiences shared by families who have welcomed a Bless Bunny Rabbitry companion into their homes."
+        eyebrow="Kind Words From Families"
+        title="Hear From Families Who Welcomed a Bunny Home"
+        description="Nothing means more to us than seeing our rabbits become cherished members of loving families. Read what past bunny owners have shared about their experience with Bless Bunny Rabbitry."
       />
-    </>
+      <FeaturedTestimonials />
+    </main>
   );
 }
