@@ -4,6 +4,7 @@ import FilterControls from "../components/sections/gallery/FilterControls";
 import GalleryGrid from "../components/sections/gallery/GalleryGrid";
 import LifeAtBB from "../components/sections/gallery/LifeAtBB";
 import Lightbox from "../components/sections/gallery/Lightbox";
+import CTASection from "../components/sections/CTASection";
 
 // Data Imports:
 import galleryFilters from "../data/gallery/galleryFilters";
@@ -11,6 +12,9 @@ import galleryImages from "../data/gallery/galleryImages";
 
 // Tool Imports:
 import { useState, useMemo, act } from "react";
+
+// Image Imports:
+import galleryCTAImage from "../assets/images/cta/gallery-cta.webp";
 
 export default function Gallery() {
   const [activeFilter, setActiveFilter] = useState("All Photos");
@@ -55,6 +59,16 @@ export default function Gallery() {
         />
       )}
       <LifeAtBB />
+      <CTASection
+        id="gallery-cta-heading"
+        eyebrow="Found a Favorite?"
+        title="Your Perfect Bunny May Be Waiting"
+        descriptions={[
+          "From playful Holland Lops to charming Netherland Dwarfs, our rabbits are raised with care and socialized daily. Explore our available bunnies and find the perfect companion for your family.",
+        ]}
+        image={galleryCTAImage}
+        imageAlt="Holland Lop and Netherland Dwarf rabbits sitting together on a cozy blanket indoors"
+      />
     </main>
   );
 }
