@@ -2,6 +2,7 @@
 import PageHero from "../components/sections/PageHero";
 import FilterControls from "../components/sections/gallery/FilterControls";
 import GalleryGrid from "../components/sections/gallery/GalleryGrid";
+import LifeAtBB from "../components/sections/gallery/LifeAtBB";
 import Lightbox from "../components/sections/gallery/Lightbox";
 
 // Data Imports:
@@ -53,6 +54,7 @@ export default function Gallery() {
           }
         />
       )}
+      <LifeAtBB />
     </main>
   );
 }
