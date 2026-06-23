@@ -40,9 +40,7 @@ export default function Nutrition() {
             {nutritionData.map((item) => (
               <HighlightCard
                 key={item.id}
-                icon={item.icon}
-                title={item.title}
-                description={item.description}
+                {...item}
               />
             ))}
           </div>

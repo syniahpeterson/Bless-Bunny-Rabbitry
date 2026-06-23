@@ -18,14 +18,7 @@ export default function WhyChooseUs() {
       />
       <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
         {whyData.map((why) => (
-          <ValueCard
-            key={why.id}
-            variant="whyChoose"
-            icon={why.icon}
-            title={why.title}
-            description={why.description}
-            image={why.image}
-          />
+          <ValueCard key={why.id} variant="whyChoose" {...why} />
         ))}
       </div>
     </Section>

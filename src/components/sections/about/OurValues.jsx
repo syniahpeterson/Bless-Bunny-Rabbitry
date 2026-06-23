@@ -37,10 +37,7 @@ export default function OurValues() {
           {values.map((value) => (
             <ValueCard
               key={value.id}
-              icon={value.icon}
-              title={value.title}
-              description={value.description}
-              image={value.image}
+              {...value}
               variant="values"
             />
           ))}

@@ -48,9 +48,7 @@ export default function WhyChooseUs() {
         {features.map((feature) => (
           <FeatureCard
             key={feature.id}
-            icon={feature.icon}
-            title={feature.title}
-            description={feature.description}
+            {...feature}
           />
         ))}
       </div>

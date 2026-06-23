@@ -50,8 +50,7 @@ export default function Introduction() {
             {IntroItems.map((item) => (
                 <HighlightCard
                     key={item.id}
-                    icon={item.icon}
-                    title={item.text}
+                    {...item}
                 />
             ))}
           </div>

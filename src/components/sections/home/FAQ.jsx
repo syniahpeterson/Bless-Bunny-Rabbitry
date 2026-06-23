@@ -55,9 +55,7 @@ export default function FAQ() {
             {faqData.map((item, index) => (
               <FAQItem
                 key={item.id}
-                id={item.id}
-                question={item.question}
-                answer={item.answer}
+                {...item}
                 defaultOpen={index === 0}
               />
             ))}

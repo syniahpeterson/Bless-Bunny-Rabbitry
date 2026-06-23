@@ -50,9 +50,7 @@ export default function BunnyChosen() {
             {nextSteps.map((step, index) => (
               <ListCard
                 key={step.id}
-                icon={step.icon}
-                title={step.title}
-                description={step.description}
+                {...step}
                 divider={index !== nextSteps.length - 1}
               />
             ))}

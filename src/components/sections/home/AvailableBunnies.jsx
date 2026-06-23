@@ -29,17 +29,7 @@ export default function AvailableBunnies() {
       {/* Bunny Cards */}
       <div className="mt-12 grid items-stretch gap-8 md:grid-cols-2 xl:grid-cols-3">
         {bunnies.map((bunny) => (
-          <BunnyCard
-            key={bunny.id}
-            image={bunny.image}
-            name={bunny.name}
-            price={bunny.price}
-            breed={bunny.breed}
-            gender={bunny.gender}
-            availableDate={bunny.availableDate}
-            color={bunny.color}
-            status={bunny.status}
-          />
+          <BunnyCard key={bunny.id} {...bunny} />
         ))}
       </div>
 

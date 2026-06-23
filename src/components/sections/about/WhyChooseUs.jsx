@@ -45,9 +45,7 @@ export default function WhyChooseUs() {
             {bullets.map((bullet, index) => (
               <ListCard
                 key={bullet.id}
-                icon={bullet.icon}
-                title={bullet.title}
-                description={bullet.description}
+                {...bullet}
                 divider={index !== bullets.length - 1}
               />
             ))}

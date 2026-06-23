@@ -56,9 +56,7 @@ export default function OurStory() {
           {stats.map((stat) => (
             <StatCard
               key={stat.id}
-              icon={stat.icon}
-              value={stat.value}
-              label={stat.label}
+              {...stat}
             />
           ))}
         </div>

@@ -53,12 +53,7 @@ export default function OurStory() {
           {/* Highlights */}
           <div className="grid gap-8 md:grid-cols-2">
             {storyHighlights.map((highlight) => (
-              <HighlightCard
-                key={highlight.id}
-                title={highlight.title}
-                description={highlight.description}
-                icon={highlight.icon}
-              />
+              <HighlightCard key={highlight.id} {...highlight} />
             ))}
           </div>
 

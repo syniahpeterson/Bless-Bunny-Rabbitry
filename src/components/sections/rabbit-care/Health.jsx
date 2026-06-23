@@ -19,13 +19,7 @@ export default function Health() {
       />
       <div className="mt-12 grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
         {healthData.map((item) => (
-          <ValueCard
-            key={item.id}
-            title={item.title}
-            description={item.description}
-            icon={item.icon}
-            image={item.image}
-          />
+          <ValueCard key={item.id} {...item} />
         ))}
       </div>
     </Section>

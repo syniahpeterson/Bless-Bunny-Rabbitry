@@ -24,10 +24,7 @@ export default function OurBreeds() {
         {breeds.map((breed, index) => (
           <BreedCard
             key={breed.id}
-            breed={breed.breed}
-            image={breed.image}
-            description={breed.description}
-            features={breed.features}
+            {...breed}
             reverse={index % 2 !== 0}
           />
         ))}

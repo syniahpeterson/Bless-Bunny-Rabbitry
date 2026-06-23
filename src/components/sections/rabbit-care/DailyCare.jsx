@@ -21,10 +21,7 @@ export default function DailyCare() {
         {rabbitSocializationData.map((item) => (
           <ProcessCard
             key={item.id}
-            title={item.title}
-            number={item.number}
-            description={item.description}
-            icon={item.icon}
+            {...item}
           />
         ))}
       </div>

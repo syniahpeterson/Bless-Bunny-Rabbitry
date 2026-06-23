@@ -34,10 +34,7 @@ export default function OurBreeds() {
           {aboutBreeds.map((breed, index) => (
             <BreedShowcase
               key={breed.id}
-              title={breed.name}
-              image={breed.image}
-              description={breed.description}
-              features={breed.features}
+              {...breed}
               reverse={index % 2 !== 0}
             />
           ))}

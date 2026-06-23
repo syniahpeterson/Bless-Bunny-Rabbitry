@@ -21,10 +21,7 @@ export default function HousingEssentials() {
         {housingData.map((item) => (
           <ValueCard
             key={item.id}
-            icon={item.icon}
-            description={item.description}
-            title={item.title}
-            image={item.image}
+            {...item}
           />
         ))}
       </div>
