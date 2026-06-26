@@ -1,5 +1,6 @@
 // Component Imports:
 import PageHero from "../components/sections/PageHero";
+import CommunityTrust from "../components/sections/testimonials/CommunityTrust";
 import FeaturedTestimonials from "../components/sections/testimonials/FeaturedTestimonials";
 import HappyBunnyFamilies from "../components/sections/testimonials/HappyBunnyFamilies";
 
@@ -14,6 +15,7 @@ export default function Testimonials() {
       />
       <FeaturedTestimonials />
       <HappyBunnyFamilies />
+      <CommunityTrust />
     </main>
   );
 }
