@@ -6,18 +6,18 @@ export default function ListCard({
 }) {
   return (
     <article
-      className={`flex gap-5 py-6 ${divider ? "border-b border-border" : ""}`}
+      className={`flex gap-5 py-3 ${divider ? "border-b border-border" : ""}`}
     >
       {/* Icon */}
-      <div className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-sage-light/40">
-        <Icon className="w-10 h-10 text-forest" aria-hidden="true" />
+      <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-sage-light/40">
+        <Icon className="w-8 h-8 text-forest" aria-hidden="true" />
       </div>
       {/* Content */}
       <div className="flex-1">
-        <h3 className="font-serif text-3xl leading-none text-forest">
+        <h3 className="font-serif text-2xl leading-none text-forest">
           {title}
         </h3>
-        <p className="mt-2 max-w-md text-lg leading-relaxed text-text">
+        <p className="mt-1 max-w-md text-lg leading-relaxed text-text">
           {description}
         </p>
       </div>

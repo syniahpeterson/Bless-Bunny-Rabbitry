@@ -38,7 +38,8 @@ export default function LifeAtBB() {
           {rabbitryLifeImages.map((item, index) => (
             <img
               key={item.id}
-              {...item}
+              src={item.image}
+              alt={item.alt}
               loading="lazy"
               className="h-full w-full object-cover transition duration-500 hover:scale-105"
             />

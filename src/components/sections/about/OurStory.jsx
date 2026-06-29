@@ -43,7 +43,7 @@ export default function OurStory() {
             />
 
             {/* Decorative Divider */}
-            <div className="mt-6 flex items-center gap-4" aria-hidden="true">
+            <div className="mt-6 flex items-center justify-center gap-4" aria-hidden="true">
               <div className="h-px w-20 bg-sage" />
               <LuLeaf className="text-3xl text-sage" />
               <div className="h-px w-20 bg-sage" />

@@ -22,7 +22,7 @@ export default function OurBreeds() {
 
         {/* Decorative Center Divider */}
         <div
-          className="mb-16 flex items-center justify-center gap-3"
+          className="my-10 flex items-center justify-center gap-3"
           aria-hidden="true"
         >
           <div className="h-px w-16 bg-sage" />

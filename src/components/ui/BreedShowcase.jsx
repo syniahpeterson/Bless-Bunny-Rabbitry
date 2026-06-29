@@ -29,7 +29,7 @@ export default function BreedShowcase({
         </h3>
 
         {/* Decorative Divider */}
-        <div className="my-5 flex items-center gap-2" aria-hidden="true">
+        <div className="my-5 flex items-center justify-center gap-2" aria-hidden="true">
           <div className="h-px w-8 bg-sage" />
           <FaLeaf className="text-sage text-xs" />
           <div className="h-px w-8 bg-sage" />

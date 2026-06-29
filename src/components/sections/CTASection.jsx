@@ -51,7 +51,7 @@ export default function CTASection({
           />
 
           {/* Decorative Divider */}
-          <div className="my-8 flex items-center gap-5" aria-hidden="true">
+          <div className="my-8 flex items-center justify-center gap-5" aria-hidden="true">
             <div className="h-px w-16 bg-sage" />
             <LuLeaf className="text-2xl text-sage" />
             <div className="h-px w-16 bg-sage" />

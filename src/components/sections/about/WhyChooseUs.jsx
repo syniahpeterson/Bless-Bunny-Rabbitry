@@ -33,7 +33,7 @@ export default function WhyChooseUs() {
           />
           {/* Decorative Divider */}
           <div
-            className="mb-10 mt-4 flex items-center gap-2"
+            className="mb-10 mt-4 flex items-center justify-center gap-2"
             aria-hidden="true"
           >
             <div className="h-px w-10 bg-sage" />

@@ -8,25 +8,25 @@ const rabbitCareIntro = [
   {
     id: 1,
     icon: BsHouseHeart,
-    text: "Safe Housing",
+    title: "Safe Housing",
   },
 
   {
     id: 2,
     icon: FaCarrot,
-    text: "Proper Nutrition",
+    title: "Proper Nutrition",
   },
 
   {
     id: 3,
     icon: HiOutlineUserGroup,
-    text: "Daily Socialization",
+    title: "Daily Socialization",
   },
 
   {
     id: 4,
     icon: GiHeartPlus,
-    text: "Health Monitoring",
+    title: "Health Monitoring",
   },
 ];
 
