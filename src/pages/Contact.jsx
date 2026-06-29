@@ -1,5 +1,6 @@
 // Component Imports:
 import PageHero from "../components/sections/PageHero";
+import ContactMethods from "../components/sections/contact/ContactMethods";
 import GetInTouch from "../components/sections/contact/GetInTouch";
 
 export default function Contact() {
@@ -11,6 +12,7 @@ export default function Contact() {
         description="We'd love to hear from you and answer any questions."
       />
       <GetInTouch />
+      <ContactMethods />
     </main>
   );
 }
