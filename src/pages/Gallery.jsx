@@ -16,6 +16,10 @@ import { useState, useMemo, act } from "react";
 // Image Imports:
 import galleryCTAImage from "../assets/images/cta/gallery-cta.webp";
 
+// Icon Imports:
+import { GiRabbit } from "react-icons/gi";
+import { BsArrowRight } from "react-icons/bs";
+
 export default function Gallery() {
   const [activeFilter, setActiveFilter] = useState("All Photos");
   const [selectedIndex, setSelectedIndex] = useState(null);
@@ -61,13 +65,20 @@ export default function Gallery() {
       <LifeAtBB />
       <CTASection
         id="gallery-cta-heading"
-        eyebrow="Found a Favorite?"
-        title="Your Perfect Bunny May Be Waiting"
+        eyebrow="Picture Your New Companion"
+        title="Ready to Meet Our Rabbits?"
         descriptions={[
-          "From playful Holland Lops to charming Netherland Dwarfs, our rabbits are raised with care and socialized daily. Explore our available bunnies and find the perfect companion for your family.",
+          "Browse our available rabbits and discover the perfect bunny for your family.",
         ]}
         image={galleryCTAImage}
-        imageAlt="Holland Lop and Netherland Dwarf rabbits sitting together on a cozy blanket indoors"
+        imageAlt="Family enjoying time with their rabbit"
+        primaryButtonText="View Available Bunnies"
+        primaryButtonTo="/available-bunnies"
+        primaryButtonLeftIcon={GiRabbit}
+        primaryButtonRightIcon={BsArrowRight}
+        secondaryButtonText="Contact Us"
+        secondaryButtonTo="/contact"
+        secondaryButtonRightIcon={BsArrowRight}
       />
     </main>
   );

@@ -53,7 +53,7 @@ export default function FAQ() {
           {/* FAQ List */}
           <div className="space-y-4">
             {faqData.map((item, index) => (
-              <FAQItem {...item} defaultOpen={index === 0} />
+              <FAQItem key={item.id} {...item} defaultOpen={index === 0} />
             ))}
           </div>
 

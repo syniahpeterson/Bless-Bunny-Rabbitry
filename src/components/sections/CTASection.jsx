@@ -3,86 +3,107 @@ import Section from "../layout/Section";
 import SectionHeading from "../ui/SectionHeading";
 import Button from "../ui/Button";
 
-// Data Imports
-import features from "../../data/features";
-
 // Icon Imports
 import { LuLeaf } from "react-icons/lu";
-import { GiRabbit } from "react-icons/gi";
-import { BsArrowRight } from "react-icons/bs";
 
 export default function CTASection({
   id,
+  variant = "white",
+
   eyebrow,
   title,
   descriptions,
+
   image,
   imageAlt,
+
+  primaryButtonText,
+  primaryButtonTo,
+  primaryButtonLeftIcon,
+  primaryButtonRightIcon,
+
+  secondaryButtonText,
+  secondaryButtonTo,
+  secondaryButtonLeftIcon,
+  secondaryButtonRightIcon,
+
+  features = null,
 }) {
   return (
     <Section
-      variant="white"
+      variant={variant}
       aria-labelledby={id}
       className="relative overflow-hidden"
     >
-      {/* Background Image */}
+      {/* Desktop Background Image */}
       <div
-        className="absolute inset-y-0 right-0 hidden w-[58%] overflow-hidden lg:block"
+        className="absolute inset-y-0 right-0 hidden w-1/2 overflow-hidden lg:block"
         aria-hidden="true"
       >
         <img
           src={image}
           alt=""
+          loading="lazy"
           className="h-full w-full object-cover object-center"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/30 to-transparent" />
       </div>
 
-      {/* Main Content */}
-      <div className="relative z-10">
-        <div className="max-w-3xl">
-          <SectionHeading
-            id={id}
-            eyebrow={eyebrow}
-            title={title}
-            descriptions={descriptions}
-            align="left"
-          />
+      {/* Content */}
+      <div className="relative z-10 max-w-3xl">
+        <SectionHeading
+          id={id}
+          eyebrow={eyebrow}
+          title={title}
+          descriptions={descriptions}
+          align="left"
+        />
 
-          {/* Decorative Divider */}
-          <div className="my-8 flex items-center justify-center gap-5" aria-hidden="true">
-            <div className="h-px w-16 bg-sage" />
-            <LuLeaf className="text-2xl text-sage" />
-            <div className="h-px w-16 bg-sage" />
-          </div>
+        {/* Divider */}
+        <div
+          className="my-8 flex items-center justify-center gap-5"
+          aria-hidden="true"
+        >
+          <div className="h-px w-16 bg-sage" />
+          <LuLeaf className="text-2xl text-sage" />
+          <div className="h-px w-16 bg-sage" />
+        </div>
 
-          {/* CTA Buttons */}
+        {/* Buttons */}
+        {(primaryButtonText || secondaryButtonText) && (
           <nav
-            aria-label="Rabbitry actions"
+            aria-label="Call to action"
             className="mt-10 flex flex-col gap-4 sm:flex-row"
           >
-            <Button
-              variant="primary"
-              to="/available-bunnies"
-              leftIcon={GiRabbit}
-              rightIcon={BsArrowRight}
-              className="px-10 py-5 uppercase tracking-[0.12em] shadow-lg"
-            >
-              View Available Bunnies
-            </Button>
+            {primaryButtonText && (
+              <Button
+                variant="primary"
+                to={primaryButtonTo}
+                leftIcon={primaryButtonLeftIcon}
+                rightIcon={primaryButtonRightIcon}
+                className="px-10 py-5 uppercase tracking-[0.12em] shadow-lg"
+              >
+                {primaryButtonText}
+              </Button>
+            )}
 
-            <Button
-              variant="secondary"
-              to="/contact"
-              rightIcon={BsArrowRight}
-              className="px-10 py-5 uppercase tracking-[0.12em]"
-            >
-              Contact Us
-            </Button>
+            {secondaryButtonText && (
+              <Button
+                variant="secondary"
+                to={secondaryButtonTo}
+                leftIcon={secondaryButtonLeftIcon}
+                rightIcon={secondaryButtonRightIcon}
+                className="px-10 py-5 uppercase tracking-[0.12em]"
+              >
+                {secondaryButtonText}
+              </Button>
+            )}
           </nav>
+        )}
 
-          {/* Feature Highlights */}
+        {/* Feature Highlights */}
+        {features && (
           <div className="mt-20 grid gap-8 md:grid-cols-3">
             {features.map((feature, index) => {
               const Icon = feature.icon;
@@ -109,7 +130,7 @@ export default function CTASection({
               );
             })}
           </div>
-        </div>
+        )}
       </div>
 
       {/* Mobile Image */}

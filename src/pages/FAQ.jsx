@@ -16,6 +16,10 @@ import StillHaveQuestions from "../components/sections/faq/StillHaveQuestions";
 // Image Imports:
 import faqCTAImage from "../assets/images/cta/faq-cta.webp";
 
+// Icon Imports:
+import { GiRabbit } from "react-icons/gi";
+import { BsArrowRight } from "react-icons/bs";
+
 export default function FAQ() {
   return (
     <main className="mt-24">
@@ -98,10 +102,17 @@ export default function FAQ() {
         eyebrow="Ready to Find Your Bunny?"
         title="Your Perfect Companion Is Waiting"
         descriptions={[
-          "Whether you're looking for a playful Holland Lop or a charming Netherland Dwarf, we're here to help you find the perfect bunny for your family. Browse our available rabbits and begin your adoption journey today.",
+          "Whether you're looking for a playful Holland Lop or a charming Netherland Dwarf, we're here to help you find the perfect bunny for your family.",
         ]}
         image={faqCTAImage}
-        imageAlt="Happy family spending time with their Holland Lop rabbit in a cozy living room"
+        imageAlt="Family welcoming their Holland Lop rabbit"
+        primaryButtonText="View Available Bunnies"
+        primaryButtonTo="/available-bunnies"
+        primaryButtonLeftIcon={GiRabbit}
+        primaryButtonRightIcon={BsArrowRight}
+        secondaryButtonText="Contact Us"
+        secondaryButtonTo="/contact"
+        secondaryButtonRightIcon={BsArrowRight}
       />
     </main>
   );

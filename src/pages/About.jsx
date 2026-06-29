@@ -8,7 +8,7 @@ import PageHero from "../components/sections/PageHero";
 import CTASection from "../components/sections/CTASection";
 
 // Image Imports:
-import aboutCtaImage from "../assets/images/cta/about-cta-bunny.webp";
+import aboutCTAImage from "../assets/images/cta/about-cta-bunny.webp";
 
 // Icon Imports:
 import { GiRabbit } from "react-icons/gi";
@@ -30,13 +30,20 @@ export default function About() {
       <WhyChooseUs />
       <CTASection
         id="about-cta-heading"
-        eyebrow="Ready to Welcome a Bunny Home?"
-        title="Meet the Rabbits Raised With Care, Love, and Attention"
+        eyebrow="Find Your New Best Friend"
+        title="Ready to Welcome a Bunny Home?"
         descriptions={[
-          "Now that you've learned more about our family, values, and breeding philosophy, we'd love to introduce you to our available Holland Lop and Netherland Dwarf rabbits.",
+          "Explore our available rabbits and begin your adoption journey with Bless Bunny Rabbitry.",
         ]}
-        image={aboutCtaImage}
-        imageAlt="Multicolor Holland Lop rabbit sitting on a cozy blanket"
+        image={aboutCTAImage}
+        imageAlt="Family holding their Holland Lop rabbit"
+        primaryButtonText="View Available Bunnies"
+        primaryButtonTo="/available-bunnies"
+        primaryButtonLeftIcon={GiRabbit}
+        primaryButtonRightIcon={BsArrowRight}
+        secondaryButtonText="Contact Us"
+        secondaryButtonTo="/contact"
+        secondaryButtonRightIcon={BsArrowRight}
       />
     </main>
   );

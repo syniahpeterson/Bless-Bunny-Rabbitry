@@ -8,6 +8,10 @@ import CTASection from "../components/sections/CTASection";
 // Image Imports:
 import testimonialsCTAImage from "../assets/images/cta/testimonials-cta.webp";
 
+// Icon Imports:
+import { GiRabbit } from "react-icons/gi";
+import { BsArrowRight } from "react-icons/bs";
+
 export default function Testimonials() {
   return (
     <main className="mt-24">
@@ -22,13 +26,20 @@ export default function Testimonials() {
       <CommunityTrust />
       <CTASection
         id="testimonials-cta-heading"
-        eyebrow="Join Our Bunny Family"
-        title="Ready to Welcome Your New Best Friend?"
+        eyebrow="Ready to Join Our Rabbitry Family?"
+        title="Start Your Adoption Journey Today"
         descriptions={[
-          "Every bunny at Bless Bunny Rabbitry is raised with love, socialized daily, and prepared for a lifetime of companionship. Browse our available Holland Lops and Netherland Dwarfs to find the perfect addition to your family.",
+          "See why so many families have trusted Bless Bunny Rabbitry and find your perfect bunny companion.",
         ]}
         image={testimonialsCTAImage}
-        imageAlt="Happy family relaxing together with their Holland Lop rabbit in a cozy living room"
+        imageAlt="Happy family holding their rabbit"
+        primaryButtonText="View Available Bunnies"
+        primaryButtonTo="/available-bunnies"
+        primaryButtonLeftIcon={GiRabbit}
+        primaryButtonRightIcon={BsArrowRight}
+        secondaryButtonText="Contact Us"
+        secondaryButtonTo="/contact"
+        secondaryButtonRightIcon={BsArrowRight}
       />
     </main>
   );

@@ -11,6 +11,10 @@ import CTASection from "../components/sections/CTASection";
 // Image Imports:
 import rabbitCareCTAImage from "../assets/images/cta/rabbit-care-cta.webp";
 
+// Icon Imports:
+import { GiRabbit } from "react-icons/gi";
+import { BsArrowRight } from "react-icons/bs";
+
 export default function RabbitCare() {
   return (
     <main className="mt-24">
@@ -28,13 +32,20 @@ export default function RabbitCare() {
       <FAQ />
       <CTASection
         id="rabbit-care-cta-heading"
-        eyebrow="Ready to Welcome a Rabbit Home?"
-        title="Find a Healthy, Well-Socialized Companion"
+        eyebrow="Ready for Your New Companion?"
+        title="Find the Perfect Bunny"
         descriptions={[
-          "Now that you've learned the essentials of rabbit care, explore our available Holland Lop and Netherland Dwarf rabbits and find the perfect companion for your family.",
+          "Now that you know how to care for a rabbit, explore our available bunnies and begin your adoption journey.",
         ]}
         image={rabbitCareCTAImage}
-        imageAlt="Healthy Holland Lop and Netherland Dwarf rabbits resting together in a cozy indoor setting"
+        imageAlt="Healthy Holland Lop rabbit"
+        primaryButtonText="View Available Bunnies"
+        primaryButtonTo="/available-bunnies"
+        primaryButtonLeftIcon={GiRabbit}
+        primaryButtonRightIcon={BsArrowRight}
+        secondaryButtonText="Contact Us"
+        secondaryButtonTo="/contact"
+        secondaryButtonRightIcon={BsArrowRight}
       />
     </main>
   );

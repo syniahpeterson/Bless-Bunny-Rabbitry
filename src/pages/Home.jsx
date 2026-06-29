@@ -1,3 +1,4 @@
+// Component Imports:
 import Hero from "../components/sections/home/Hero";
 import Section from "../components/layout/Section";
 import WhyChooseUs from "../components/sections/home/WhyChooseUs";
@@ -8,7 +9,15 @@ import Testimonials from "../components/sections/home/Testimonials";
 import FAQ from "../components/sections/home/FAQ";
 import CTASection from "../components/sections/CTASection";
 
-import homeCtaImage from "../assets/images/cta/home-cta-bunny.webp";
+// Data Imports:
+import features from "../data/features";
+
+// Image Imports:
+import homeCTAImage from "../assets/images/cta/home-cta-bunny.webp";
+
+// Icon Imports:
+import { GiRabbit } from "react-icons/gi";
+import { BsArrowRight } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -21,14 +30,22 @@ export default function Home() {
       <Testimonials />
       <FAQ />
       <CTASection
-        id="final-cta-heading"
-        eyebrow="Ready to Welcome a Bunny Home?"
-        title="Bring Home a Friendly, Family-Raised Companion"
+        id="home-cta-heading"
+        eyebrow="Ready to Find Your Perfect Bunny?"
+        title="Bring Home a Healthy, Happy Companion"
         descriptions={[
-          "Explore our available Holland Lop and Netherland Dwarf rabbits or contact us with any questions. We'd love to help you find the perfect addition to your family.",
+          "Browse our available Holland Lop and Netherland Dwarf rabbits and discover the perfect addition to your family.",
         ]}
-        image={homeCtaImage}
-        imageAlt="Friendly Holland Lop rabbit sitting on a blanket"
+        image={homeCTAImage}
+        imageAlt="Family holding their new Holland Lop rabbit"
+        primaryButtonText="View Available Bunnies"
+        primaryButtonTo="/available-bunnies"
+        primaryButtonLeftIcon={GiRabbit}
+        primaryButtonRightIcon={BsArrowRight}
+        secondaryButtonText="Contact Us"
+        secondaryButtonTo="/contact"
+        secondaryButtonRightIcon={BsArrowRight}
+        features={features}
       />
     </main>
   );

@@ -8,7 +8,11 @@ import PageHero from "../components/sections/PageHero";
 import CTASection from "../components/sections/CTASection";
 
 // Image Imports:
-import familyWithRabbitImage from "../assets/images/cta/available-bunnies-cta.webp";
+import availableCTAImage from "../assets/images/cta/available-bunnies-cta.webp";
+
+// Icon Imports:
+import { GiRabbit } from "react-icons/gi";
+import { BsArrowRight } from "react-icons/bs";
 
 export default function AvailableBunnies() {
   return (
@@ -25,14 +29,21 @@ export default function AvailableBunnies() {
       <BunnyChosen />
       <FAQ />
       <CTASection
-        id="available-bunnies-cta-heading"
-        eyebrow="Found a Bunny You Love?"
-        title="Take the First Step Toward Bringing Your New Companion Home"
+        id="available-cta-heading"
+        eyebrow="Ready to Adopt?"
+        title="Your Bunny Is Waiting"
         descriptions={[
-          "Whether you're ready to reserve a rabbit or simply have questions, we're here to help. Reach out today and we'll guide you through the next steps.",
+          "Take the next step toward welcoming a healthy, well-socialized rabbit into your home.",
         ]}
-        image={familyWithRabbitImage}
-        imageAlt="Family holding their newly adopted rabbit"
+        image={availableCTAImage}
+        imageAlt="Happy family with their Holland Lop"
+        primaryButtonText="Contact Us"
+        primaryButtonTo="/contact"
+        primaryButtonLeftIcon={GiRabbit}
+        primaryButtonRightIcon={BsArrowRight}
+        secondaryButtonText="Rabbit Care"
+        secondaryButtonTo="/rabbit-care"
+        secondaryButtonRightIcon={BsArrowRight}
       />
     </main>
   );
