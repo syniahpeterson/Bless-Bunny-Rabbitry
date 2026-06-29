@@ -2,6 +2,7 @@
 import PageHero from "../components/sections/PageHero";
 import ContactMethods from "../components/sections/contact/ContactMethods";
 import GetInTouch from "../components/sections/contact/GetInTouch";
+import WhatToExpect from "../components/sections/contact/WhatToExpect";
 
 export default function Contact() {
   return (
@@ -13,6 +14,7 @@ export default function Contact() {
       />
       <GetInTouch />
       <ContactMethods />
+      <WhatToExpect />
     </main>
   );
 }
