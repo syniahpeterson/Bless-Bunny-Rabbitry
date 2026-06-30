@@ -5,6 +5,7 @@ import Health from "../components/sections/rabbit-care/Health";
 import HousingEssentials from "../components/sections/rabbit-care/HousingEssentials";
 import Introduction from "../components/sections/rabbit-care/Introduction";
 import Nutrition from "../components/sections/rabbit-care/Nutrition";
+import RecommendedProducts from "../components/sections/rabbit-care/RecommendedProducts";
 import FAQ from "../components/sections/rabbit-care/FAQ";
 import CTASection from "../components/sections/CTASection";
 
@@ -29,6 +30,7 @@ export default function RabbitCare() {
       <Nutrition />
       <DailyCare />
       <Health />
+      <RecommendedProducts />
       <FAQ />
       <CTASection
         id="rabbit-care-cta-heading"
